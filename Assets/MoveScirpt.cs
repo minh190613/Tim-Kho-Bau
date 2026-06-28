@@ -7,10 +7,17 @@ public class MoveScirpt : MonoBehaviour
     public float runSpeed = 8f;      // Tốc độ chạy
     public float rotateSpeed = 10f;
 
+    public int point = 0;
+
     private Animator animator;
     public Transform cameraTransform;
 
     private Rigidbody rb;
+
+    public void AddPoint(int point)
+    {
+        this.point += point;
+    }
 
     void Start()
     {
